@@ -1,3 +1,17 @@
-<p>
-  shopping-edit works!
-</p>
+<div fxLayout="column">
+  <form class="shopping-list-edit-form">
+    <mat-form-field hintLabel="Ingredient Name">
+      <input matInput placeholder="Name">
+    </mat-form-field>
+
+    <mat-form-field hintLabel="Ingredient Amount">
+      <input matInput placeholder="Amount">
+    </mat-form-field>
+
+    <div class="button-row">
+      <button mat-raised-button color="primary">Add</button>
+      <button mat-raised-button color="warn">Delete</button>
+      <button mat-raised-button color="accent">Clear</button>
+    </div>  
+  </form>
+</div>
