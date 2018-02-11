@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+/* Global Application Level Styles */
+html, body {
+	display: flex;
+	flex-direction: column;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    height: 100%;
+}
