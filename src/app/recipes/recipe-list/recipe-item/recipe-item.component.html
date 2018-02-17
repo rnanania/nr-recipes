@@ -1,3 +1,7 @@
-<p>
-  recipe-item works!
-</p>
+  <mat-list-item (click)="onRecipeSelected()">
+    <img matListAvatar [src]="recipe.imgPath" [alt]="recipe.name">
+    <h3 matLine> {{recipe.name}} </h3>
+    <p matLine>
+      <span class="demo-2"> {{recipe.desc}} </span>
+    </p>
+  </mat-list-item>

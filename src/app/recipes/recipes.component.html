@@ -1,9 +1,16 @@
 <div fxLayout="row" fxLayoutAlign="space-evenly stretch">
 	<div fxFlex="50">
-		<app-recipe-list></app-recipe-list>
+		<app-recipe-list (selectedRecipeEmitter)="onSelectedRecipeEmitter($event)"></app-recipe-list>
 	</div>	
 	<div fxFlex="50">
-		<app-recipe-detail></app-recipe-detail>
+		<app-recipe-detail 
+			*ngIf="recipe; else recipeNotSelected;"
+			[recipe]="recipe">
+		</app-recipe-detail>
+		
+		<ng-template #recipeNotSelected>
+			<p>Please select recipe from List</p>
+		</ng-template>
 	</div>
 </div>
 

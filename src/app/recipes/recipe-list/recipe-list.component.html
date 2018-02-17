@@ -1,11 +1,8 @@
 <mat-list>
-  <mat-list-item *ngFor="let recipe of recipes">
-    <img matListAvatar src="{{recipe.imgPath}}" alt="{{recipe.name}}">
-    <h3 matLine> {{recipe.name}} </h3>
-    <p matLine>
-      <span class="demo-2"> {{recipe.desc}} </span>
-    </p>
-  </mat-list-item>
+	<app-recipe-item *ngFor="let recipeEl of recipes" 
+	[recipe]="recipeEl"
+	(recipeSelected)="onRecipeSelected(recipeEl)">
+	</app-recipe-item>
 </mat-list>
 <button mat-fab color="primary">
 	<mat-icon aria-label="Add Recipe">add</mat-icon>

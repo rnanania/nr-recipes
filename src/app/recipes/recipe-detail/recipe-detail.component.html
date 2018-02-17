@@ -2,12 +2,12 @@
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>Recipe</mat-card-title>
-    <mat-card-subtitle>Recipe 1</mat-card-subtitle>
+    <mat-card-subtitle>{{recipe.name}}</mat-card-subtitle>
   </mat-card-header>
   
-  <img mat-card-lg-image src="http://www.pvhc.net/img13/kcsklielltknmyimwxqs.png" alt="Recipe">
+  <img mat-card-lg-image [src]="recipe.imgPath" alt="Recipe">
   <mat-card-content>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nibh non justo congue eleifend non vitae velit. Curabitur eros lacus, ultrices a suscipit sed, dignissim ut leo. Nunc mattis metus tortor, a posuere lectus fringilla at. Suspendisse potenti. Nam varius aliquam tortor eget blandit. Nulla sit amet lacus eu massa venenatis finibus. Nullam facilisis ornare lacus nec vulputate. Nunc sit amet elit iaculis, ullamcorper ligula ut, aliquam magna. Duis non nibh tempus, vestibulum dolor non, finibus orci. Aliquam egestas vulputate nisi, a porttitor odio facilisis vitae. Nunc et velit convallis, fringilla odio vel, aliquam dolor. Nam a nunc pharetra, finibus enim lacinia, varius lorem. Maecenas interdum dictum vehicula. Donec fringilla mauris ante, finibus vehicula tortor luctus finibus.</p>
+    <p>{{recipe.desc}}</p>
   </mat-card-content>
 
   <mat-card-actions>

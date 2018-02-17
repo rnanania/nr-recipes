@@ -1,6 +1,6 @@
 <div fxLayout="row" fxLayoutAlign="space-around center">
 	<div fxFlex="50">
-		<app-shopping-edit></app-shopping-edit>
+		<app-shopping-edit (ingredientAdded)="ingAdded($event)"></app-shopping-edit>
 	</div>	
 	<div fxFlex="50">
 		<mat-chip-list>

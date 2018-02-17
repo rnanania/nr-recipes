@@ -1,15 +1,15 @@
 <div fxLayout="column">
   <form class="shopping-list-edit-form">
     <mat-form-field hintLabel="Ingredient Name">
-      <input matInput placeholder="Name">
+      <input matInput placeholder="Name" #ingName>
     </mat-form-field>
 
     <mat-form-field hintLabel="Ingredient Amount">
-      <input matInput placeholder="Amount">
+      <input matInput placeholder="Amount" #ingAmount>
     </mat-form-field>
 
     <div class="button-row">
-      <button mat-raised-button color="primary">Add</button>
+      <button mat-raised-button color="primary" (click)="addIngredient()">Add</button>
       <button mat-raised-button color="warn">Delete</button>
       <button mat-raised-button color="accent">Clear</button>
     </div>  
