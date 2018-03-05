@@ -1,8 +1,10 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-	<button mat-button><mat-icon>home</mat-icon> Recipe Book</button>
-    <button mat-button>Recipes</button>
-    <button mat-button>Shopping List</button>
+	<div class="display-1">Recipe Book</div>
+	<a mat-button routerLinkActive="mat-raised-button" 
+	routerLink="/recipes" color="accent" class="recipeBookMenu">Recipes</a>
+	<a mat-button routerLinkActive="mat-raised-button" 
+	routerLink="/shopping-list" color="accent" class="recipeBookMenu">Shopping List</a>
 
     <span class="example-spacer"></span>
 

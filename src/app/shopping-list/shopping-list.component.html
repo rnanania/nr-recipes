@@ -1,10 +1,10 @@
 <div fxLayout="row" fxLayoutAlign="space-around center">
 	<div fxFlex="50">
-		<app-shopping-edit (ingredientAdded)="ingAdded($event)"></app-shopping-edit>
+		<app-shopping-edit></app-shopping-edit>
 	</div>	
 	<div fxFlex="50">
 		<mat-chip-list>
-		  <mat-chip color="primary" selected=true *ngFor="let ingredient of ingredients">
+		  <mat-chip color="warn" selected=true *ngFor="let ingredient of ingredients">
 		    {{ingredient.name}} - {{ingredient.amount}}
 		  </mat-chip>
 		</mat-chip-list>

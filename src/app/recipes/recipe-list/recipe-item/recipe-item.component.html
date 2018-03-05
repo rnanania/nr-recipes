@@ -1,4 +1,4 @@
-  <mat-list-item (click)="onRecipeSelected()">
+  <mat-list-item [routerLink]=[recipeId]>
     <img matListAvatar [src]="recipe.imgPath" [alt]="recipe.name">
     <h3 matLine> {{recipe.name}} </h3>
     <p matLine>
