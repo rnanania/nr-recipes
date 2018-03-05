@@ -1,3 +1,7 @@
+<a mat-fab routerLink="/recipes/new" color="primary">
+	<mat-icon aria-label="Add Recipe">add</mat-icon>
+</a>
+
 <mat-list>
 	<app-recipe-item 
 		*ngFor="let recipeEl of recipes; let recipeId = index;" 
@@ -5,8 +9,6 @@
 		[recipeId]="recipeId">
 	</app-recipe-item>
 </mat-list>
-<button mat-fab color="primary">
-	<mat-icon aria-label="Add Recipe">add</mat-icon>
-</button>	
+
 
 
